@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaporte</title>
+
+</head>
+<body>
+    <h1>Você mora em qual Lugar?</h1>
+    Você é do estado de<input type="text" name="est" id="est">
+    <input type="button" value="Então você é!()" onclick="calcular()">
+    <div id="txt"></div>
+    <script> function calcular(){
+        var est=document.querySelector('input#est')
+        var txt=document.querySelector('div#txt')
+        txt.innerHTML=` <p>Você é <strong>mineira(O)</strong></p>`
+        if(txt||MG){
+            txt.innerHTML='Você não é Mineira(o)'
+        }
+    } 
+   
+    
+    </script>
+</body>
+</html>
